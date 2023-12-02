@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Unsupervised AVS">
+  <meta name="keywords" content="Unsupervised AVS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unsupervised AVS</title>
+   
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <script src="./static/js/index.js"></script>
+  <!-- <meta name="google-site-verification" content="rvZfDSs9SdTOr4oSUadPVLK7hrmPjfievNepG09VJm8" /> -->
+
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://intelligolabs.net/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://intelligolabs.net/blog/">
+            IntelligoLabs Projects
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Unsupervised Active Visual Search  with Monte Carlo planning under Uncertain Detections</h1>
+          <div class="is-size-5 publication-authors">
+            
+            <span class="author-block">
+              <!-- <a href="https://francescotaioli.github.io/">Francesco Taioli</a>, -->
+              Francesco Taioli,
+            </span>
+      
+            <span class="author-block">
+              Francesco Giuliari,</span>
+
+            <span class="author-block">
+              Yiming Wang,</span>
+             <span class="author-block">
+              Riccardo Berra,
+            </span>
+            <span class="author-block">
+              Alberto Castellini,
+            </span>
+              <span class="author-block">
+                Alessio Del Bue,
+            </span>
+            </span>
+              <span class="author-block">
+                Alessandro Farinelli,
+            </span>
+            </span>
+              <span class="author-block">
+              Marco Cristani,
+            </span>
+            </span>
+              <span class="author-block">
+                Francesco Setti
+            </span>
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">University of Verona</span>,
+            <span class="author-block">University of Verona</span>
+          </div> -->
+          
+            <!-- <span class="tag is-success is-primary is-large">Accepted at ICCVw 23</span> -->
+          
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Available upon acceptance)</span>
+                  </a>
+              </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-max-desktop">
+        <div class="content has-text-centered">
+          <div class="columns is-centered">
+            <div class="column is-7">
+              <img class="image is-371x299" src="./static/images/architecture.png" alt="Teaser">
+              <p>
+                Architecture of  POMP-BE-PD
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section"> 
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose a solution for Active Visual Search of objects in an environment, whose 2D floor map is the only known information. Our solution has three key features that make it more plausible and robust to detector failures compared to state-of-the-art methods: 
+            <i>(i)</i> it is unsupervised as it does not need any training sessions. <i>(ii)</i> During the exploration, a probability distribution on the 2D floor map is updated according to an intuitive mechanism, while an improved belief update increases the effectiveness of the agent’s exploration.
+            <i>(iii)</i> We incorporate the awareness that an object detector may fail into the aforementioned probability modelling by exploiting the success statistics 
+      of a specific detector. Our solution is dubbed  <b>POMP-BE-PD</b> (Pomcp-based Online Motion Planning with Belief by Exploration and Probabilistic Detection). It uses the current pose of an agent and an
+      RGB-D observation to learn an optimal search policy, exploiting a POMDP solved by a Monte-Carlo planning approach. On the Active Vision Database benchmark, we increase the average success rate over 
+      all the environments by a significant 35% while decreasing the average path length by 4% with respect to competing methods. Thus, our results are state-of-the-art, even without using any training procedure.
+         </p>
+          
+  
+        </div>
+      </div>
+    </div>
+
+    <div class="content is-large">
+      <h1>Scenario</h1>
+     
+    </div>
+    
+    <div class="columns is-multiline">
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_005_2.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Easy: Home 005 2
+                </span>
+            </footer>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_015_1.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Easy: Home 015 1
+                </span>
+            </footer>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_001_2.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Medium: Home 001 2
+                </span>
+            </footer>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_014_2.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Medium: Home 014 2
+                </span>
+            </footer>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_016_1.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Medium: Home 016 1
+                </span>
+            </footer>
+        </div>
+      </div>
+     
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_003_2.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Hard: Home 003 2
+                </span>
+            </footer>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_004_2.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Hard: Home 004 2
+                </span>
+            </footer>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="./static/images/home/Home_013_1.jpg" alt="">
+                </figure>
+            </div>
+            <footer class="card-footer">
+                <span class="card-footer-item">
+                  Hard: Home 013 1
+                </span>
+            </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="content is-large">
+      <h1>Examples</h1>
+      <h5>Using POMP-BE-PD method and the object detector </h5>
+    </div>
+    
+    
+     <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered is-multiline">
+      <div class="column is-three-quarters">
+        <div class="column ">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                <span>Searching for <b> Coca Cola bottle </b></span>
+              </p>
+              
+            </header>
+                  
+                    <iframe src="./static/images/gif/coca_cola_home_003_2_.gif" width="500" height="300" frameborder="0" allowfullscreen></iframe>
+                  
+             
+              <footer class="card-footer">
+                  <div class="card-footer-item">
+                    <span>Home 003 2</span>
+                  </div>
+              </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-three-quarters">
+          <div class="column ">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Searching for <b> Listerine </b></span>
+                </p>
+              </header>
+                      <iframe src="./static/images/gif/listerine_home_004_2.gif" width="500" height="300" frameborder="0" allowfullscreen></iframe>
+                <footer class="card-footer">
+                    <div class="card-footer-item">
+                      <span>Home 004 2</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="column is-three-quarters">
+      <div class="column ">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span>Searching for <b> Red Bull </b></span>
+            </p>
+          </header>
+                  <iframe src="./static/images/gif/red_bull_Home_0013_1.gif" width="500" height="300" frameborder="0" allowfullscreen></iframe>
+            <footer class="card-footer">
+                <div class="card-footer-item">
+                  <span>Home 013 1</span>
+                </div>
+            </footer>
+        </div>
+
+
+        
+    </div>
+
+    
+
+    
+    <!--/ Paper video. -->
+  </div>
+
+
+<footer class="footer">
+  <div class="container">
+  
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            <a
+              href="https://github.com/nerfies/nerfies.github.io">Source code</a> of this website (Nerfies)
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
