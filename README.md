@@ -4,7 +4,7 @@
 > Consider citing our paper:
 > ```BibTeX
 >@ARTICLE{taioli_24_UAVS,
->       author={Taioli, Francesco and Giuliari, Francesco and Wang, Yiming and Berra, Riccardo and Castellini, Alberto and Bue, Alessio Del and Farinelli, Alessandro and Cristani, Marco and Setti, Francesco},
+>        author={Taioli, Francesco and Giuliari, Francesco and Wang, Yiming and Berra, Riccardo and Castellini, Alberto and Bue, Alessio Del and Farinelli, Alessandro and Cristani, Marco and Setti, Francesco},
 >        journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
 >        title={{Unsupervised Active Visual Search with Monte Carlo Planning under Uncertain Detections}}, 
 >        year={2024},
