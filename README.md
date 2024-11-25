@@ -57,7 +57,7 @@ This project was develop using ubuntu 18.04 (boost library version ```1.65.1```)
 ```
 
 ## Explanation
-The **original (without pre-processing)** dataset can be found [here.](https://www.cs.unc.edu/~ammirato/active_vision_dataset_website/visualize_data.html). For speed purposes, we applied some pre-processing steps to the dataset, thus not every files describe above is used during the simulation phase.
+The **original (without pre-processing)** dataset can be found [here](https://www.cs.unc.edu/~ammirato/active_vision_dataset_website/visualize_data.html). For speed purposes, we applied some pre-processing steps to the dataset, thus not every files describe above is used during the simulation phase.
 
 The folder ```pomp_be_pd``` contains several files:
 - ```ListView.txt```: each rows represent an image of the AVDB datasets.
