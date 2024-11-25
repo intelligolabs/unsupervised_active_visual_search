@@ -79,6 +79,12 @@ As usual, each row index of ```ObservMatrix.txt``` is associated to ```ListView.
 - ```GaussObsvMatrix.txt```: the idea is similar to ```ObservMatrix.txt```. Here, we save for each pose of the agent, the  probabilities to have the target object in location `j` given the agent pose.
 - `detector_stat.json`: contains the statistics of the object detector (precision and recall for each object)
 
+### Data samples
+Download some test samples from G-Drive [here](https://drive.google.com/file/d/1x6uE4FJX6uGDJkZw_RMV_h_5FO3m_p68/view?usp=sharing). Extract the content inside the
+```input_pomp_be_pd``` folder. Thus, the folder should contain the following files:
+- ```ListView.txt```
+- ```MatrixG.txt```
+- ```etc..```
 
 ## Acknowledgements
 Code based on [Monte-Carlo Planning in Large POMDPs - NeurIPS](https://papers.nips.cc/paper_files/paper/2010/hash/edfbe1afcf9246bb0d40eb4d8027d90f-Abstract.html)
