@@ -10,3 +10,5 @@ target/pomp_be_pd
 .vscode/
 src/out/*
 !src/out/.gitkeep
+out/*
+!out/.gitkeep
