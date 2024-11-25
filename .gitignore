@@ -7,6 +7,6 @@ Makefile
 input_pomp_be_pd/*
 !input_pomp_be_pd/.gitkeep
 target/pomp_be_pd
-
+.vscode/
 src/out/*
 !src/out/.gitkeep
