@@ -53,7 +53,7 @@ This project was develop using ubuntu 18.04 (boost library version ```1.65.1```)
 
 4. Run the policy solver
 ```bash
-    ./target/pomp_be_pd  --problem "activevisualsearch"
+    ./target/pomp_be_pd  --problem "activevisualsearch" --runs=1 --maxdoubles=10 --mindoubles=10 --use_gt=1 --penality=1 --accuracy=120 --target_id=3 --startpos=10
 ```
 
 ## Explanation
